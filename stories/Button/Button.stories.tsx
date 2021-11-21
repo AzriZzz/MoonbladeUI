@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from '../src';
+import { Button, ButtonProps } from '../../src';
 
 const meta: Meta = {
-  title: 'Input/Button',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
     onClick: { action: 'clicked' },

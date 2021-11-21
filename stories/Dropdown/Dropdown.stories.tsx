@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Dropdown, SwitchColorProps } from '../src';
+import { Dropdown, SwitchColorProps } from '../../src';
 
 const meta: Meta = {
-  title: 'Input/Dropdown',
+  title: 'Components/Dropdown',
   component: Dropdown,
   argTypes: {
     colorToken: {
