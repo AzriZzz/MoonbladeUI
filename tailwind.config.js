@@ -10,7 +10,6 @@ module.exports = {
       colors: {
         moongray: {
           DEFAULT: '#4B5563',
-          light: '#F9FAFB'
         },
         moonred: {
           DEFAULT: '#DC2626',

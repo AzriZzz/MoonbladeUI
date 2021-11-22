@@ -10,9 +10,15 @@ yarn storybook
 ```
 This loads the stories from `./stories`.
 
-### Bundle analysis
+You can visit this <a href='' target='_blank'>Link</a> to open the storybook.
 
-Calculates the real cost of your library using [size-limit](https://github.com/ai/size-limit) with `npm run size` and visulize it with `npm run analyze`.
+### Unit test
+```bash
+yarn test
+
+```
+This will run unit test inside the folder test
+
 
 #### Setup Files
 
@@ -38,13 +44,3 @@ package.json
 README.md         # README OBVIOUSLY
 tsconfig.json
 ```
-
-### Rollup
-
-TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rollup configs for various module formats and build settings. See [Optimizations](#optimizations) for details.
-
-### TypeScript
-
-`tsconfig.json` is set up to interpret `dom` and `esnext` types, as well as `react` for `jsx`. Adjust according to your needs.
-
-## Continuous Integration

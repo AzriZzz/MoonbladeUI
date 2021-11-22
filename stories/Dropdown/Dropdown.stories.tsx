@@ -25,7 +25,6 @@ const meta: Meta = {
 export default meta;
 
 const Template: Story<SwitchColorProps> = (args) => {
-  console.log('STories : ', args);
   return <Dropdown {...args} />;
 }
 
