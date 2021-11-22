@@ -20,7 +20,8 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-tailwind": "cross-env NODE_ENV=production npx tailwindcss -o ./dist/tailwind.css --minify"
+    "build-tailwind": "cross-env NODE_ENV=production npx tailwindcss -o ./dist/tailwind.css --minify",
+    "chromatic": "npx chromatic --project-token=a143070de3f9"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -62,6 +63,7 @@
     "@types/react-dom": "^17.0.11",
     "autoprefixer": "^10.4.0",
     "babel-loader": "^8.2.3",
+    "chromatic": "^6.0.6",
     "husky": "^7.0.4",
     "postcss": "^8.3.11",
     "react": "^17.0.2",
