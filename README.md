@@ -10,7 +10,7 @@ yarn storybook
 ```
 This loads the stories from `./stories`.
 
-You can visit this <a href='' target='_blank'>Link</a> to open the storybook.
+You can visit this <a href='https://619b584c58fbbb003a8645ad-cbbdbbzxht.chromatic.com/' target='_blank'>Link</a> to open storybook deployed on chromatic.
 
 ### Unit test
 ```bash
