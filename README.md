@@ -4,6 +4,10 @@ A simple React component library to help you developing apps faster and more pro
 helps to develop React component libraries more realiable and faster without thinking other stuff to setup 
 such as Rollup, PostCSS, and ...etc
 
+## How to use supported component ?
+
+Visit this <a href='https://619b584c58fbbb003a8645ad-cbbdbbzxht.chromatic.com/' target='_blank'>Link</a> and open <strong>B. Installation</strong> in MDX folder.
+
 ### Run the project with Storybook
 ```bash
 yarn storybook
