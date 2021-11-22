@@ -17,7 +17,7 @@ export interface SwitchColorProps {
 }
 
 /** A dropdown integate with HeadlessUi and Tailwind */
-export const Dropdown = ({ colorToken = 'moonpurple' }: SwitchColorProps) => {
+export const Dropdown = ({ colorToken = 'moonpurple', ...rest }: SwitchColorProps) => {
   const bgColor = `bg-${colorToken}`;
 
   const colorSwitch = (colorToken: string) => {
@@ -79,6 +79,7 @@ export const Dropdown = ({ colorToken = 'moonpurple' }: SwitchColorProps) => {
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
                         color={bgColor}
+                        {...rest}
                       />
                     ) : (
                       <EditInactiveIcon
@@ -102,6 +103,7 @@ export const Dropdown = ({ colorToken = 'moonpurple' }: SwitchColorProps) => {
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
                         color={bgColor}
+                        {...rest}
                       />
                     ) : (
                       <DuplicateInactiveIcon
@@ -127,6 +129,7 @@ export const Dropdown = ({ colorToken = 'moonpurple' }: SwitchColorProps) => {
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
                         color={bgColor}
+                        {...rest}
                       />
                     ) : (
                       <ArchiveInactiveIcon
@@ -149,6 +152,7 @@ export const Dropdown = ({ colorToken = 'moonpurple' }: SwitchColorProps) => {
                       <MoveActiveIcon
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
+                        {...rest}
                       />
                     ) : (
                       <MoveInactiveIcon
@@ -174,6 +178,7 @@ export const Dropdown = ({ colorToken = 'moonpurple' }: SwitchColorProps) => {
                         className="w-5 h-5 mr-2 text-violet-400"
                         aria-hidden="true"
                         color={bgColor}
+                        {...rest}
                       />
                     ) : (
                       <DeleteInactiveIcon
