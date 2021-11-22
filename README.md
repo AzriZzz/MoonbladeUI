@@ -10,8 +10,7 @@ yarn storybook
 ```
 This loads the stories from `./stories`.
 
-You can visit this <a href='' target='_blank'>Link</a>
-
+You can visit this <a href='' target='_blank'>Link</a> to open the storybook.
 
 ### Unit test
 ```bash
