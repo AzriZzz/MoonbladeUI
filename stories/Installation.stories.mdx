@@ -4,7 +4,7 @@ import Sidebar from './assets/sidebar.png';
 import DropdownImg from './assets/dropdown.png';
 import SnippetCode from './assets/snippet-code.png';
 
-<Meta title="MDX/2. Installation" component={Dropdown} />
+<Meta title="MDX/B. Installation" component={Dropdown} />
 
 # Installation
 
@@ -37,13 +37,28 @@ import SnippetCode from './assets/snippet-code.png';
 
 4. Open your react project, and paste it on the file that you're working with. 
 
-<div style={{display: 'flex',justifyContent: 'center'}}>
-  <img src={SnippetCode} alt="Dropdown" />
-</div>
+**Importing Dependencies**
+
+```js
+import React from "react";
+import { Dropdown } from "moonbladeui";
+import 'moonblade/dist/tailwind.css';
+
+const playground = () => {
+  return (
+    <div>
+      <Dropdown colorToken={'moonpurple'}/>
+    </div>
+  )
+}
+```
 
 5. Paste this 2 line on your component to use the component and enable the tailwind styling.
-- import { SelectedComponent } from "moonbladeui" <br/><br/>
-- import 'moonbladeui/dist/tailwind.css';
+
+```js
+import { SelectedComponent } from "moonbladeui" 
+import 'moonbladeui/dist/tailwind.css';
+```
 
 
 

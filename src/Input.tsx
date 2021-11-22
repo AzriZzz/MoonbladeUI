@@ -1,17 +1,14 @@
-import React, { HTMLAttributes, ReactNode } from 'react';
+import React, { HTMLAttributes } from 'react';
 
 export interface InputStateProps extends HTMLAttributes<HTMLInputElement> {
-  children: ReactNode;
   /** Select the state of input field */
   state: 'Default' | 'Success' | 'Warning' | 'Error';
 }
 
 export const Input = ({
-  children,
   state = 'Default',
   ...rest
 }: InputStateProps) => {
-  console.log(state);
   return (
     <div className="py-5 space-y-8">
       <div className="flex flex-col space-y-2">
@@ -22,7 +19,6 @@ export const Input = ({
             name="default"
             placeholder="Placeholder"
             className="px-4 py-2 border border-gray-300 rounded-lg lg:w-80 focus:outline-none focus:ring-2 focus:ring-gray-200"
-            {...children}
             {...rest}
           />
         ) : state === 'Success' ? (
@@ -59,7 +55,6 @@ export const Input = ({
             name="default"
             placeholder="Placeholder"
             className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 lg:w-80 focus:ring-gray-200"
-            {...children}
             {...rest}
           />
         )}
