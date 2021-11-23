@@ -1,6 +1,6 @@
-import React, { HTMLAttributes } from 'react';
+import React, { DOMAttributes } from 'react';
 
-export interface InputStateProps extends HTMLAttributes<HTMLInputElement> {
+export interface InputStateProps extends DOMAttributes<HTMLInputElement> {
   /** Select the state of input field */
   state: 'Default' | 'Success' | 'Warning' | 'Error';
 }
