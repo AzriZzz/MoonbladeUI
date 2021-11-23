@@ -6,6 +6,7 @@ const meta: Meta = {
   title: 'Components/Dropdown',
   component: Dropdown,
   argTypes: {
+    onClick: { action: 'clicked' },
     colorToken: {
       options: [
         'moonpurple',
@@ -24,8 +25,12 @@ const meta: Meta = {
 
 export default meta;
 
+const run = () => {
+  console.log();
+}
+
 const Template: Story<SwitchColorProps> = (args) => {
-  return <Dropdown {...args} />;
+  return <Dropdown onClick={() => run()} {...args} />;
 }
 
 export const MoonPurple = Template.bind({});

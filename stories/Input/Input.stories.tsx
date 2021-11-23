@@ -4,12 +4,17 @@ import { Input, InputStateProps } from '../../src';
 
 const meta: Meta = {
   title: 'Components/Input Field',
-  component: Input
+  component: Input,
+  argTypes: { onChange: { action: 'typing' } },
 };
 
 export default meta;
 
-const Template: Story<InputStateProps> = (args) => <Input {...args}/>;
+const handleChange = (e) => {
+  console.log(e);
+}
+
+const Template: Story<InputStateProps> = (args) => <Input onChange={(e) => {handleChange(e)}} {...args}/>;
 
 export const Default = Template.bind({});
 

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { DOMAttributes } from 'react';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 
-export interface SwitchColorProps {
+export interface SwitchColorProps extends DOMAttributes<HTMLButtonElement> {
   /** A colorToken to change color theme of the dropdown */
   colorToken:
     | 'moongray'
@@ -73,13 +73,13 @@ export const Dropdown = ({ colorToken = 'moonpurple', ...rest }: SwitchColorProp
                     className={`${
                       active ? `${bgColor} text-white` : 'text-gray-900'
                     } group flex rounded-md items-center w-full px-2 py-2 hover:${bgColor} text-sm`}
+                    {...rest}
                   >
                     {active ? (
                       <EditActiveIcon
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
                         color={bgColor}
-                        {...rest}
                       />
                     ) : (
                       <EditInactiveIcon
@@ -97,13 +97,13 @@ export const Dropdown = ({ colorToken = 'moonpurple', ...rest }: SwitchColorProp
                     className={`${
                       active ? `${bgColor} text-white` : 'text-gray-900'
                     } group flex rounded-md items-center w-full px-2 py-2 hover:${bgColor} text-sm`}
+                    {...rest}
                   >
                     {active ? (
                       <DuplicateActiveIcon
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
                         color={bgColor}
-                        {...rest}
                       />
                     ) : (
                       <DuplicateInactiveIcon
@@ -123,13 +123,13 @@ export const Dropdown = ({ colorToken = 'moonpurple', ...rest }: SwitchColorProp
                     className={`${
                       active ? `${bgColor} text-white` : 'text-gray-900'
                     } group flex rounded-md items-center w-full px-2 py-2 hover:${bgColor} text-sm`}
+                    {...rest}
                   >
                     {active ? (
                       <ArchiveActiveIcon
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
                         color={bgColor}
-                        {...rest}
                       />
                     ) : (
                       <ArchiveInactiveIcon
@@ -147,12 +147,12 @@ export const Dropdown = ({ colorToken = 'moonpurple', ...rest }: SwitchColorProp
                     className={`${
                       active ? `${bgColor} text-white` : 'text-gray-900'
                     } group flex rounded-md items-center w-full px-2 py-2 hover:${bgColor} text-sm`}
+                    {...rest}
                   >
                     {active ? (
                       <MoveActiveIcon
                         className="w-5 h-5 mr-2"
                         aria-hidden="true"
-                        {...rest}
                       />
                     ) : (
                       <MoveInactiveIcon
@@ -172,13 +172,13 @@ export const Dropdown = ({ colorToken = 'moonpurple', ...rest }: SwitchColorProp
                     className={`${
                       active ? `${bgColor} text-white` : 'text-gray-900'
                     } group flex rounded-md items-center w-full px-2 py-2 hover:${bgColor} text-sm`}
+                    {...rest}
                   >
                     {active ? (
                       <DeleteActiveIcon
                         className="w-5 h-5 mr-2 text-violet-400"
                         aria-hidden="true"
                         color={bgColor}
-                        {...rest}
                       />
                     ) : (
                       <DeleteInactiveIcon
