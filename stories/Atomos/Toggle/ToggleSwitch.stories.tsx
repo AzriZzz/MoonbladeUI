@@ -1,18 +1,13 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from '../../src';
+import { ToggleSwitch, ToggleSwitchProps } from '../../../src';
 
 const meta: Meta = {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/Atomos/Toggle Switch',
+  component: ToggleSwitch,
   argTypes: {
     onClick: { action: 'clicked' },
-    title: {
-      control: {
-        type: 'text',
-      },
-    },
-    disabled: {
+    enabled: {
       control: {
         type: 'boolean',
       },
@@ -25,10 +20,9 @@ const meta: Meta = {
 
 export default meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ToggleSwitchProps> = (args) => <ToggleSwitch {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: 'Storybook Button',
-  disabled: false,
+  enabled: false,
 };

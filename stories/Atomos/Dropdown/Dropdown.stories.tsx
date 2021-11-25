@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Dropdown, SwitchColorProps } from '../../src';
+import { Dropdown, SwitchColorProps } from '../../../src';
 
 const meta: Meta = {
-  title: 'Components/Dropdown',
+  title: 'Components/Atomos/Dropdown',
   component: Dropdown,
   argTypes: {
     onClick: { action: 'clicked' },

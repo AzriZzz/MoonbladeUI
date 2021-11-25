@@ -1,9 +1,9 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Input, InputStateProps } from '../../src';
+import { Input, InputStateProps } from '../../../src';
 
 const meta: Meta = {
-  title: 'Components/Input Field',
+  title: 'Components/Atomos/Input',
   component: Input,
   argTypes: { onChange: { action: 'typing' } },
 };
