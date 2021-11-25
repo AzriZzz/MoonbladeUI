@@ -6,7 +6,7 @@ such as Rollup, PostCSS, and ...etc
 
 ## How to use supported component ?
 
-Visit this <a href='https://619b584c58fbbb003a8645ad-pasuivjdwi.chromatic.com/' target='_blank'>Link</a> and open <strong>B. Installation</strong> in MDX folder.
+Visit this <a href='https://619b584c58fbbb003a8645ad-gqvpeofamb.chromatic.com/' target='_blank'>Link</a> and open <strong>B. Installation</strong> in MDX folder.
 
 ### Run the project with Storybook
 ```bash
